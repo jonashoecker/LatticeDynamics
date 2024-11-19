@@ -14,8 +14,8 @@ for n in range(1, 5):
 
     values_u_acoustic = [amplitude(k, pos) for pos in position_u]
     values_v_acoustic = [amplitude(k, pos) for pos in position_v]
-    values_u_optical = [amplitude(k, pos) for pos in position_u]
-    values_v_optical = [-amplitude(k, pos) for pos in position_v]
+    values_u_optical = [-amplitude(k, pos) for pos in position_u]
+    values_v_optical = [amplitude(k, pos) for pos in position_v]
 
     axs[n - 1, 0].plot(position_u, values_u_acoustic, marker='o', color='red', linestyle='', label="Mass mu (Acoustic)")
     axs[n - 1, 0].plot(position_v, values_v_acoustic, marker='o', color='green', linestyle='', label="Mass mv (Acoustic)")
